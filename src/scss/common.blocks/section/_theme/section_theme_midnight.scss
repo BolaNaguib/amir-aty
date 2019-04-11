@@ -1,0 +1,19 @@
+.section_theme_midnight{
+  background-color: $color__midnight;
+  color: white;
+}
+
+@for $i from 1 through length($color__midnight_list_dark) {
+  .section_theme_midnight_#{$i} {
+    background-color: nth($color__midnight_list_dark, $i);
+    color: white;
+  }
+}
+
+@for $i from 1 through length($color__midnight_list_light) {
+  $y: $i+7;
+  .section_theme_midnight_#{$y} {
+    background-color: nth($color__midnight_list_light, $i);
+    color: $color__midnight;
+  }
+}
