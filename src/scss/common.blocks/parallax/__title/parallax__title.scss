@@ -1,0 +1,7 @@
+.parallax__title {
+  font-size: 75px;
+  font-weight: bolder;
+  @include mediaquery_size_m() {
+    font-size: 125px;
+  }
+}

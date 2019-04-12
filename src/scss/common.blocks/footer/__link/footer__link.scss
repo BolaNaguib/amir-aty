@@ -1,0 +1,12 @@
+.footer__link{
+      color: #afafaf;
+      padding: 10px 0px;
+      &:hover{
+        text-decoration: none;
+        color: #fff;
+        border-color: #fff;
+      }
+      &::before{
+        border-bottom: 3px solid #fff;
+      }
+}
