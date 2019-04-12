@@ -13,3 +13,20 @@
 @import "common.globals/common.globals";
 @import "common.variables/common.variables";
 @import "common.blocks/common.blocks";
+
+label.uk-form-label {
+    color: #fff;
+    padding: 10px 0px;
+    display: -webkit-box;
+    font-size: 28px;
+}
+
+input#form-stacked-text, {
+    padding: 39px 20px;
+    color: #fff !important;
+    background-color: #121414;
+}
+textarea#form-stacked-text{
+  color: #fff !important;
+  background-color: #121414;
+}
