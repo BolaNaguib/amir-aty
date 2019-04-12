@@ -1,0 +1,15 @@
+.parallax{
+  height: 100vh;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    right: 0;
+    bottom: 0;
+    background: $color__midnight;
+    z-index: 0;
+    opacity: 0.6;
+  }
+}

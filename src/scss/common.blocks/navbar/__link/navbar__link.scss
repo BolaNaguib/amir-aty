@@ -1,0 +1,13 @@
+.navbar__link{
+  color: #FFF !important;
+  padding: 5px 0px;
+  min-height: 50px !important;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+    border-color: #fff;
+  }
+  &::before{
+    border-bottom: 3px solid #fff;
+  }
+}

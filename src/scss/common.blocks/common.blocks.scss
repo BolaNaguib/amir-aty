@@ -2,3 +2,22 @@
 @import "section/section";
 @import "section/_theme/section_theme_midnight";
 @import "section/_theme/section_theme_sunflower";
+@import "section/_type/section_type_parallax";
+@import "section/_type/section_type_footer";
+
+//parallax
+@import "parallax/__title/parallax__title";
+@import "parallax/__title/parallax__right";
+@import "parallax/__title/parallax__left";
+@import "parallax/parallax";
+
+//footer
+@import "footer/__title/footer__title";
+@import "footer/__link/footer__link";
+
+//hr
+@import "hr/_type/hr_type_footer";
+
+//navbar
+@import "navbar/__link/navbar__link";
+@import "navbar/_theme/navbar_theme_midnight";

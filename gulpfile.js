@@ -6,7 +6,8 @@ const
   // source and build folders
   dir = {
     src         : 'src/',
-    build       : '.'
+    build       : '.',
+    imagesalter : ''
   },
 
   // Gulp and plugins
@@ -42,7 +43,7 @@ gulp.task('php', () => {
 // image settings
 const images = {
   src         : dir.src + 'images/**/*',
-  build       : dir.build + 'images/'
+  build       : dir.imagesalter + 'images/'
 };
 
 // image processing
