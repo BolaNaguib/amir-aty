@@ -4,6 +4,10 @@
 <head>
   <title>Amir Aty | Decoration</title>
   <meta charset="utf-8">
+  <meta name="title" content="Amir Aty">
+  <meta name="description" content="Amir Aty Decoration">
+<meta name="keywords" content="Amir Aty Decoration">
+<meta name="author" content="Inetwork-Me">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
