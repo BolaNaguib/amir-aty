@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#de751f">
+
 
 </head>
 
