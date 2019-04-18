@@ -21,12 +21,18 @@ label.uk-form-label {
     font-size: 28px;
 }
 
-input#form-stacked-text, {
+.uk-input, {
     padding: 39px 20px;
     color: #fff !important;
-    background-color: #121414;
+    background-color: #121414 !important;
 }
-textarea#form-stacked-text{
+.uk-textarea{
   color: #fff !important;
-  background-color: #121414;
+  background-color: #121414 !important;
+}
+.mapiframe iframe{
+  width: 100% !important;
+}
+.screen-reader-response ul{
+  display: none !important;
 }

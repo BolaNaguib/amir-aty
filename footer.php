@@ -1,69 +1,54 @@
-
 <footer class="section_type_footer">
-  <div class="uk-child-width-1-4" uk-grid>
-<div class="">
-  <h3 class="footer__title">About Us</h3>
-  <hr class="hr_type_footer">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis consequat nisl, et scelerisque ex. In fringilla interdum libero a pulvinar. Nam at mauris turpis. Morbi at elementum nibh. Vivamus porttitor arcu eu facilisis tincidunt. Etiam sed pretium elit. In quam enim, mattis vel libero efficitur, rutrum pharetra ante. </p>
-</div>
-<div class="">
-  <h3 class="footer__title">Links</h3>
-  <hr class="hr_type_footer">
-  <ul class="uk-list">
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-  </ul>
-</div>
-<div class="">
-  <h3 class="footer__title">Links</h3>
-  <hr class="hr_type_footer">
-  <ul class="uk-list">
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-  </ul>
-</div>
-<div class="">
-  <h3 class="footer__title">Title</h3>
-  <hr class="hr_type_footer">
-  <ul class="uk-list">
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-    <li>
-      <a class="footer__link  uk-button-text" href="#"> Quick Link</a>
-    </li>
-  </ul>
-</div>
+  <div class="uk-child-width-1-4@m uk-child-width-1-1" uk-grid>
+    <?php
+// check if the flexible content field has rows of data
+if( have_rows('footer','option') ):
+     // loop through the rows of data
+    while ( have_rows('footer','option') ) : the_row();
+
+        if( get_row_layout() == 'coloumn_with_text' ):?>
+    <div class="">
+      <h3 class="footer__title">
+        <?php the_sub_field('coloumn_title'); ?>
+      </h3>
+      <hr class="hr_type_footer">
+      <p>
+        <?php the_sub_field('column_caption'); ?>
+      </p>
+    </div>
+
+
+    <?  elseif( get_row_layout() == 'coloumn_with_links' ):?>
+    <div class="">
+      <h3 class="footer__title">Links</h3>
+      <hr class="hr_type_footer">
+      <?php if( have_rows('coloumn_links') ): ?>
+      <ul class="uk-list">
+        <?php while ( have_rows('coloumn_links') ) : the_row(); ?>
+        <li><a class="footer__link  uk-button-text" href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_title'); ?></a></li>
+        <?php endwhile; ?>
+      </ul>
+      <?php endif; ?>
+    </div>
+
+    <?php
+        endif;
+
+    endwhile;
+
+else :
+
+    // no layouts found
+
+endif;
+
+?>
+
   </div>
 </footer>
 <!-- UIkit JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
 </body>
+
 </html>
