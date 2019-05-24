@@ -9,7 +9,8 @@
 
 </section>
 <section class="section_theme_midnight">
-    <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-collapse"  uk-grid="masonry: true">
+    <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-collapse"  uk-grid="masonry: true"  uk-lightbox="animation: slide">
+
       <?php
 
       // check if the flexible content field has rows of data
@@ -20,24 +21,12 @@
 
               if( get_row_layout() == 'gallery' ): ?>
 
-              	<?php the_sub_field('text'); ?>
+                  <div>
+                      <a class="uk-inline" href="<?php the_sub_field('project_gallery'); ?>" data-caption="<?php the_sub_field('project_gallery_caption'); ?>">
+                          <img src="<?php the_sub_field('project_gallery'); ?>" alt="<?php the_sub_field('project_gallery_alt'); ?>">
+                      </a>
+                  </div>
 
-
-
-      <div class="">
-        <div class="uk-text-center">
-    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-        <img class="images" src="<?php the_sub_field('outer_image'); ?>" alt="">
-        <div uk-lightbox>
-          <a href="<?php the_sub_field('inner_image'); ?>">
-
-        <img class="uk-transition-scale-up uk-position-cover" src="<?php the_sub_field('inner_image'); ?>" alt="">
-        <h3 class="uk-position-bottom" style="    background-color: #00000099;padding: 10px;color: #3edb01;"><?php the_sub_field('project_title'); ?></h3>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 <?php elseif( get_row_layout() == 'download' ):
 
   $file = get_sub_field('file');
