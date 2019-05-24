@@ -17,9 +17,8 @@
       if( have_rows('gallery') ):
 
            // loop through the rows of data
-          while ( have_rows('gallery') ) : the_row();
+          while ( have_rows('gallery') ) : the_row();?>
 
-              if( get_row_layout() == 'gallery' ): ?>
 
                   <div>
                       <a class="uk-inline" href="<?php the_sub_field('project_gallery'); ?>" data-caption="<?php the_sub_field('project_gallery_caption'); ?>">
@@ -27,12 +26,7 @@
                       </a>
                   </div>
 
-<?php elseif( get_row_layout() == 'download' ):
-
-  $file = get_sub_field('file');
-
-endif;
-
+<?php 
 endwhile;
 
 else :
