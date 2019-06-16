@@ -1,6 +1,7 @@
-.section_type_parallax{
+.section_type_parallax {
   overflow: hidden;
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -10,6 +11,12 @@
     bottom: 0;
     background: #1c1f2a;
     z-index: 0;
-    opacity: .6;
+    opacity: 0.6;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
