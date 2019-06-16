@@ -20,7 +20,7 @@ parallax__right
 <?php else: ?>
 
 parallax__left
-<?php endif;  ?>" 
+<?php endif;  ?>" >
 <?php the_sub_field('media_title'); ?></h1>
       </div>
     </div>
