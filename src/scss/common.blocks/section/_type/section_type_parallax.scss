@@ -1,24 +1,5 @@
 .section_type_parallax {
   overflow: hidden;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    right: 0;
-    bottom: 0;
-    background: #1c1f2a;
-    z-index: 1;
-    opacity: 0.6;
-    transition: 300ms;
-  }
 
-  &:hover {
-    &:before {
-      opacity: 0.3;
-      transition: 300ms;
-    }
-  }
 }
