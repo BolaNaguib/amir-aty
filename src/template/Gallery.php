@@ -1,9 +1,9 @@
 <?php /* Template Name: Gallery Template */ ?>
 <?php get_header(); ?>
 <section class="uk-position-relative section_type_parallax">
-  <div class="parallax uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('<?php the_field('page_wallpaper') ?>');">
+  <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('<?php the_field('page_wallpaper') ?>');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-        <h1 class="parallax__title" uk-parallax="opacity: 0,1; y: -100,0; x: -100,0; scale: 2,1; viewport: 0.1;"><?php the_field('page_title') ?></h1>
+        <h1 class="parallax__title"><?php the_field('page_title') ?></h1>
     </div>
 </div>
 
@@ -26,7 +26,7 @@
                       </a>
                   </div>
 
-<?php 
+<?php
 endwhile;
 
 else :

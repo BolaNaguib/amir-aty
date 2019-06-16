@@ -11,7 +11,7 @@ if( have_rows('homepage') ):
         if( get_row_layout() == 'media_section' ): ?>
 <section class="uk-position-relative section_type_parallax">
   <a href="<?php the_sub_field('media_page'); ?>">
-    <div class="parallax uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
+    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
     style="background-image: url('<?php the_sub_field('media_background'); ?>');" >
       <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 class="parallax__title
