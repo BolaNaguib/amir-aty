@@ -20,7 +20,7 @@ parallax__right
 <?php else: ?>
 
 parallax__left
-<?php endif;  ?>" uk-parallax="opacity: 0,1; y: -100,0; x: -100,0; scale: 2,1; viewport: 0.1;">
+<?php endif;  ?>" 
 <?php the_sub_field('media_title'); ?></h1>
       </div>
     </div>

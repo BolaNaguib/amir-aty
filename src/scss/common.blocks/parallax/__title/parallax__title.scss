@@ -3,5 +3,7 @@
   font-weight: bolder;
   @include mediaquery_size_m() {
     font-size: 125px;
+    z-index: 1;
+    position: relative;
   }
 }
