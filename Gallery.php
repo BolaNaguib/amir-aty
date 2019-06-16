@@ -1,6 +1,6 @@
 <?php /* Template Name: Gallery Template */ ?>
 <?php get_header(); ?>
-<section class="uk-position-relative section_type_parallax">
+<section class="uk-position-relative section_type_parallax ">
   <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" style="background-image: url('<?php the_field('page_wallpaper') ?>');">
     <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
         <h1 class="parallax__title"><?php the_field('page_title') ?></h1>
@@ -8,7 +8,7 @@
 </div>
 
 </section>
-<section class="section_theme_midnight">
+<section class="section_theme_midnight" style="    padding-top: 50px;">
   <div class="uk-container uk-container-large">
 
     <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-lightbox="animation: slide" uk-grid>
