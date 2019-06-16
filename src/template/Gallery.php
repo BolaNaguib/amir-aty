@@ -11,7 +11,7 @@
 <section class="section_theme_midnight">
   <div class="uk-container uk-container-large">
 
-    <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-lightbox="animation: slide">
+    <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-lightbox="animation: slide" uk-grid>
 
       <?php
 
@@ -42,8 +42,6 @@ endif;
 
 
 </div>
-
-
     </div>
 </section>
 <?php get_footer(); ?>
