@@ -9,7 +9,9 @@
 
 </section>
 <section class="section_theme_midnight">
-    <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-grid-collapse"  uk-grid="masonry: true"  uk-lightbox="animation: slide">
+  <div class="uk-container uk-container-large">
+
+    <div class="uk-child-width-1-3@m uk-child-width-1-1" uk-lightbox="animation: slide">
 
       <?php
 
@@ -22,7 +24,7 @@
 
                   <div>
                       <a class="uk-inline" href="<?php the_sub_field('project_gallery'); ?>" data-caption="<?php the_sub_field('project_gallery_caption'); ?>">
-                          <img src="<?php the_sub_field('project_gallery'); ?>" alt="<?php the_sub_field('project_gallery_alt'); ?>">
+                          <img class="gallery_media"src="<?php the_sub_field('project_gallery'); ?>" alt="<?php the_sub_field('project_gallery_alt'); ?>">
                       </a>
                   </div>
 
@@ -39,6 +41,7 @@ endif;
 
 
 
+</div>
 
 
     </div>
