@@ -38,7 +38,7 @@ if( function_exists('acf_add_options_page') ) {
 	// var $tree_type = array( 'post_type', 'taxonomy', 'custom' );
 	// var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
-		if ($depth == 0) $output .= '<div class="uk-navbar-dropdown"><ul class="uk-nav uk-navbar-dropdown-nav">';
+		if ($depth == 0) $output .= '<div class="uk-navbar-dropdown navbar__link-dropdown-container"><ul class="uk-nav uk-navbar-dropdown-nav">';
 	}
 	function end_lvl( &$output, $depth = 0, $args = array() ) {
 		if ($depth == 0) $output .= '</ul></div>';
@@ -72,7 +72,7 @@ if( function_exists('acf_add_options_page') ) {
 				$class_names = 'navbar__link uk-button-text'; // Primary navbar class
 				if ($has_children) $class_names .= ' dropdown-toggle';
 			} else {
-				$class_names = 'dropdown-item';
+				$class_names = 'navbar__link-dropdown';
 				if ($is_active) $class_names .= ' text-primary';
 			}
 			if ($is_active) $class_names .= ' active';  // AAAAAAAAAA
