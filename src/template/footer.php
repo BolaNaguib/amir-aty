@@ -57,15 +57,14 @@ endif;
 
   </div>
 </footer>
-<section class="uk-padding-small uk-padding-remove-horizontal	 " style="color:#fff">
+<section class="uk-padding-small uk-padding-remove-horizontal	 " style="color:#fff;     background-color: #181a1a;">
   <div class="uk-container">
-    <hr class="green_hr uk-margin-top uk-margin-bottom" style=" ">
       <div class="uk-child-width-1-2@m uk-child-width-1-1  uk-grid" uk-grid="">
         <div class="uk-text-left@m uk-text-center uk-first-column">
-          Copyright © screen2000 - All rights reserved 2019
+          Copyright © Amir Aty - All rights reserved 2019
         </div>
         <div class="uk-text-right@m uk-text-center">
-          Made with  <i style="color:red" class="fas fa-heart"></i> By <a style="color:red" target="_blank" href="inetwork-me.com"> Inetwork-me.com</a>
+          Made with  <i style="color:red" class="fas fa-heart"></i> By <a style="color:red" target="_blank" href="https://inetwork-me.com"> Inetwork-me.com</a>
         </div>
 
 
