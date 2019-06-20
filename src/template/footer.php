@@ -26,7 +26,7 @@ if( have_rows('footer','option') ):
       <hr class="hr_type_footer">
       <?php if( have_rows('coloumn_links') ): ?>
 
-      <ul class="uk-iconnav">
+      <ul class="uk-list">
         <?php while ( have_rows('coloumn_links') ) : the_row(); ?>
         <li><a class="footer__link  uk-button-text" href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_title'); ?></a></li>
         <?php endwhile; ?>
@@ -37,7 +37,7 @@ if( have_rows('footer','option') ):
   <div class="">
     <h3 class="footer__title"><?php the_sub_field('block_title'); ?></h3>
     <hr class="hr_type_footer">
-  <ul class="uk-list">
+  <ul class="uk-iconnav">
     <li> <a target="_blank" href="<?php the_sub_field('facebook') ?>"><i class="fab fa-facebook-square"></i></a> </li>
     <li> <a target="_blank" href="<?php the_sub_field('instagram') ?>"><i class="fab fa-instagram"></i></a> </li>
   </ul>
