@@ -44,8 +44,9 @@ parallax__left
         </div>
       </div>
     </div>
+    <hr>
+
   </section>
-<hr>
 <?php
 endif;
     endwhile;
