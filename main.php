@@ -27,7 +27,7 @@ parallax__left
   </a>
 </section>
 <?php elseif( get_row_layout() == 'map_section' ): ?>
-  <section class="uk-section" style="background-color:#2f3342">
+  <section class="uk-section section_theme_midnight">
     <div class="uk-container uk-container-large">
       <div class="" uk-grid>
         <div class="uk-width-1-2 uk-width-1-1 uk-text-left@m uk-text-center">
