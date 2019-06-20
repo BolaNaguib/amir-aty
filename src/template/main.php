@@ -30,7 +30,7 @@ parallax__left
   <section class="uk-section section_theme_midnight">
     <div class="uk-container uk-container-large">
       <div class="" uk-grid>
-        <div class="uk-width-1-2 uk-width-1-1 uk-text-left@m uk-text-center">
+        <div class="uk-width-1-2 uk-width-1-1">
 <h3 class="footer__title"><?php the_sub_field('block_title') ?></h3>
 <hr class="hr_type_footer">
 <br>
