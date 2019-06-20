@@ -38,8 +38,8 @@ if( have_rows('footer','option') ):
     <h3 class="footer__title"><?php the_sub_field('block_title'); ?></h3>
     <hr class="hr_type_footer">
   <ul class="uk-iconnav">
-    <li> <a target="_blank" href="<?php the_sub_field('facebook') ?>"><i class="fab fa-facebook-square"></i></a> </li>
-    <li> <a target="_blank" href="<?php the_sub_field('instagram') ?>"><i class="fab fa-instagram"></i></a> </li>
+    <li> <a target="_blank" href="<?php the_sub_field('facebook') ?>" style="    color: #fff;    font-size: 36px;"><i class="fab fa-facebook-square"></i></a> </li>
+    <li> <a target="_blank" href="<?php the_sub_field('instagram') ?>" style="    color: #fff;    font-size: 36px;"><i class="fab fa-instagram"></i></a> </li>
   </ul>
   </div>
     <?php
