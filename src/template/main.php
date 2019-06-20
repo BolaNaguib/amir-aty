@@ -32,7 +32,7 @@ parallax__left
       <div class="" uk-grid>
         <div class="uk-width-1-2 uk-width-1-1 uk-text-left@m uk-text-center">
 <h3><?php the_sub_field('block_title') ?></h3>
-<hr>
+<hr class="hr_type_footer">
 <div class="">
   <?php the_sub_field('block_caption') ?>
 </div>
