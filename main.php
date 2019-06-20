@@ -38,7 +38,10 @@ parallax__left
   <?php the_sub_field('block_caption') ?>
 </div>
         </div>
-        <div class="uk-width-1-2@m uk-width-1-1">
+        <style media="screen">
+          .xx iframe{ width: 100% !important;}
+        </style>
+        <div class="uk-width-1-2@m uk-width-1-1 xx">
           <?php the_sub_field('map'); ?>
 
         </div>
