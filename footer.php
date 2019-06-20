@@ -26,7 +26,7 @@ if( have_rows('footer','option') ):
       <hr class="hr_type_footer">
       <?php if( have_rows('coloumn_links') ): ?>
 
-      <ul class="uk-list">
+      <ul class="uk-iconnav">
         <?php while ( have_rows('coloumn_links') ) : the_row(); ?>
         <li><a class="footer__link  uk-button-text" href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_title'); ?></a></li>
         <?php endwhile; ?>
