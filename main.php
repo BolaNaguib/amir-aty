@@ -26,6 +26,25 @@ parallax__left
     </div>
   </a>
 </section>
+<?php elseif( get_row_layout() == 'map_section' ): ?>
+  <section class="uk-section">
+    <div class="uk-container uk-container-large">
+      <div class="" uk-grid>
+        <div class="uk-width-1-2 uk-width-1-1 uk-text-left@m uk-text-center">
+<h3><?php the_sub_field('block_title') ?></h3>
+<hr>
+<div class="">
+  <?php the_sub_field('block_caption') ?>
+</div>
+        </div>
+        <div class="uk-width-1-2@m uk-width-1-1">
+          <?php the_sub_field('map'); ?>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
 <?php
 endif;
     endwhile;
