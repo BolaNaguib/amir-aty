@@ -31,8 +31,9 @@ parallax__left
     <div class="uk-container uk-container-large">
       <div class="" uk-grid>
         <div class="uk-width-1-2 uk-width-1-1 uk-text-left@m uk-text-center">
-<h3><?php the_sub_field('block_title') ?></h3>
+<h3 class="footer__title"><?php the_sub_field('block_title') ?></h3>
 <hr class="hr_type_footer">
+<br>
 <div class="">
   <?php the_sub_field('block_caption') ?>
 </div>
@@ -44,7 +45,7 @@ parallax__left
       </div>
     </div>
   </section>
-
+<hr>
 <?php
 endif;
     endwhile;
