@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#de751f">
 

@@ -20,7 +20,7 @@ if( have_rows('footer','option') ):
 
     <?  elseif( get_row_layout() == 'coloumn_with_links' ):?>
     <div class="">
-      <h3 class="footer__title">Links</h3>
+      <h3 class="footer__title"><?php the_sub_field('coloumn_title'); ?></h3>
       <hr class="hr_type_footer">
       <?php if( have_rows('coloumn_links') ): ?>
       <ul class="uk-list">
@@ -30,7 +30,15 @@ if( have_rows('footer','option') ):
       </ul>
       <?php endif; ?>
     </div>
-
+  <?  elseif( get_row_layout() == 'social_media' ):?>
+  <div class="">
+    <h3 class="footer__title"><?php the_sub_field('block_title'); ?></h3>
+    <hr class="hr_type_footer">
+  <ul class="uk-list">
+    <li> <a target="_blank" href="<?php the_sub_field('facebook') ?>"><i class="fab fa-facebook-square"></i></a> </li>
+    <li> <a target="_blank" href="<?php the_sub_field('instagram') ?>"><i class="fab fa-instagram"></i></a> </li>
+  </ul>
+  </div>
     <?php
         endif;
 
@@ -46,6 +54,22 @@ endif;
 
   </div>
 </footer>
+<section class="uk-padding-small uk-padding-remove-horizontal	 " style="color:#fff">
+  <div class="uk-container">
+    <hr class="green_hr uk-margin-top uk-margin-bottom" style=" ">
+      <div class="uk-child-width-1-2@m uk-child-width-1-1  uk-grid" uk-grid="">
+        <div class="uk-text-left@m uk-text-center uk-first-column">
+          Copyright © screen2000 - All rights reserved 2019
+        </div>
+        <div class="uk-text-right@m uk-text-center">
+          Made with  <i style="color:red" class="fas fa-heart"></i> By <a style="color:red" target="_blank" href="inetwork-me.com"> Inetwork-me.com</a>
+        </div>
+
+
+
+    </div>
+  </div>
+</section>
 <!-- UIkit JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
