@@ -21,10 +21,11 @@ if( have_rows('footer','option') ):
     <?  elseif( get_row_layout() == 'coloumn_with_links' ):?>
 
     <div class="">
+
+      <h3 class="footer__title"><?php the_sub_field('column_title'); ?></h3>
+      <hr class="hr_type_footer">
       <?php if( have_rows('coloumn_links') ): ?>
 
-      <h3 class="footer__title"><?php the_sub_field('coloumn_title'); ?></h3>
-      <hr class="hr_type_footer">
       <ul class="uk-list">
         <?php while ( have_rows('coloumn_links') ) : the_row(); ?>
         <li><a class="footer__link  uk-button-text" href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_title'); ?></a></li>
